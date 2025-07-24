@@ -1,0 +1,42 @@
+
+% ----- preamble -----
+
+\documentclass[journal=mamobx,manuscript=suppinfo]{achemso}
+
+\usepackage{lipsum}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{graphicx}
+\usepackage{amsmath, amssymb}
+\usepackage{bm}
+\usepackage{longtable}
+\usepackage{multicol}
+\raggedbottom
+\usepackage{tikz}
+\usetikzlibrary{positioning}
+\usepackage{xr} % crossreferencing to main manuscript
+\externaldocument[main:]{manuscript}
+
+% Title and Author Info
+\title{How to Write a Research Paper}
+\author{Douglas R. Tree}
+\affiliation{Chemical Engineering Department, Brigham Young University, Provo, Utah}
+\date{\today}
+\email{tree.doug@byu.edu}
+
+% ----- document text -----
+\begin{document}
+
+\maketitle
+
+\section{What goes in the SI}
+% {{{
+The SI holds figures, tables and other data that are relevant to your paper, but are too long to include in the main article.
+This may include a derivation of a result that isn't essential, or some figure that provides due diligence, but isn't really very interesting (e.g. plot of an autocorrelation time).
+You can also usually submit an electronic SI that includes videos for inclusion with the article.
+% }}}
+
+%\clearpage
+%\bibliography{refs}
+
+\end{document}
+
